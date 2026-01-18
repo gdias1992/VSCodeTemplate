@@ -1,0 +1,25 @@
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local configuration
+# .env
+
+# Database
+*.sqlite
+*.sqlite3
+!romhacking.net_meta.sqlite # In case you want to track a small mock db, but usually safer to ignore all
+
+# Logs
+logs/

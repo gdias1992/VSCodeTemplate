@@ -1,0 +1,17 @@
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python/Node (if accidentally placed in root)
+__pycache__/
+node_modules/
+.env
+.venv/
+venv/
+
+
+.dev/**.md
