@@ -54,4 +54,4 @@ Maintain clear, tabular records for each domain. Suggested columns:
 | 🏗️ | **Formatting** | [Ruff](https://beta.ruff.rs/) | `Latest` | Fast Python linter and formatter. | [Docs](https://docs.astral.sh/ruff/) |
 | ✅ | **Version Control** | [Git](https://git-scm.com/) | `N/A` | Distributed version control. | [Docs](https://git-scm.com/doc) |
 | ✅ | **Environment** | `.env` files | `N/A` | Configuration and secrets management. | N/A |
-|✅🏗️ | **AI Governance** | `instructions/` | `N/A` | Project-specific AI behavior rules. | `.github/instructions/` |
+| ✅ | **AI Governance** | `instructions/` | `N/A` | Project-specific AI behavior rules. | `.github/instructions/` |
