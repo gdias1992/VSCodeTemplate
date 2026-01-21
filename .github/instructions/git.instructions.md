@@ -7,7 +7,7 @@ applyTo: '**'
 ## 📝 Commit Message Guidelines
 We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification for all commit messages. This ensures a clean, readable history and automates changelog generation.
 
-### Format: `<type>(<scope>): <description>`
+### Format: `<type>: <description>`
 
 - **Types**:
   - `feat`: A new feature for the user.
@@ -19,12 +19,11 @@ We follow the [Conventional Commits](https://www.conventionalcommits.org/) speci
   - `test`: Adding missing tests or correcting existing tests.
   - `chore`: Changes to the build process or auxiliary tools and libraries.
   - `ci`: Changes to CI configuration files and scripts.
-- **Scope**: (Optional) The module or feature being changed (e.g., `backend`, `frontend`, `auth`, `rom-explorer`).
 - **Description**: A short, imperative-style summary of the change.
 
 ### Example:
-- `feat(backend): add async search endpoint`
-- `fix(frontend): resolve memory leak in ROM list`
+- `feat: add async search endpoint`
+- `fix: resolve memory leak in ROM list`
 - `docs: update setup instructions in README`
 
 ## 🌿 Branching Strategy
