@@ -41,3 +41,7 @@ We follow the [Conventional Commits](https://www.conventionalcommits.org/) speci
 - **Environment Variables**: Never commit `.env` files. Ensure sensitive data is managed via environment-specific configurations.
 - **Git Ignore**: Maintain `backend/.gitignore` and `frontend/.gitignore` to keep environment-specific artifacts (like `node_modules`, `.venv`, `__pycache__`) out of the repository.
 - **Formatting**: Ensure code is linted and formatted according to project standards (`black`/`ruff` for Python, `eslint` for React) before committing.
+
+## 🤖 Assistant Workflow
+- **Suggestions**: After every change to the codebase, the assistant must suggest a branch name and a commit message for the modified or created sources.
+- **Restrictions**: The assistant is **NEVER** allowed to execute `git commit` or `git push` commands. These actions must always be performed by the user manually.

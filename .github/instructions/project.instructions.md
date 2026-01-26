@@ -7,22 +7,20 @@ applyTo: '**'
 This repository follows a strict organizational structure to ensure scalability and ease of use in a local environment.
 
 ## 📚 General Standards
-- **Maintenance Policy**: Any core project document (README, STRUCTURE, TECHNOLOGIES) must be updated whenever changes occur in the project's scope, architecture, or tools.
+- **Maintenance Policy**: Any core project document (README, STRUCTURE, DATABASE, TECHNOLOGIES_FRONTEND, TECHNOLOGIES_BACKEND) must be updated whenever changes occur in the project's scope, architecture, or tools. Always ensure `DATABASE.md` reflects current migrations.
 
 ## 📝 Core Documentation
 - **README.md**: High-level project description, tech stack overview, and setup procedures. Reference: [README.md](../../README.md)
-- **STRUCTURE.md**: The primary map for the repository. Documents all directories and architectural patterns. Reference: [STRUCTURE.md](../../STRUCTURE.md)
-- **TECHNOLOGIES.md**: Detailed specification of all major libraries, frameworks, and tools used. Reference: [TECHNOLOGIES.md](../../TECHNOLOGIES.md)
+- **STRUCTURE_FRONTEND.md**: Frontend directory structure and architectural patterns. Reference: [STRUCTURE_FRONTEND.md](../../STRUCTURE_FRONTEND.md)
+- **STRUCTURE_BACKEND.md**: Backend directory structure and architectural patterns. Reference: [STRUCTURE_BACKEND.md](../../STRUCTURE_BACKEND.md)
+- **DATABASE.md**: Database diagram and schema documentation. Reference: [DATABASE.md](../../DATABASE.md)
+- **FRONTEND_DESIGN.md**: Minimalist mobile-first design system with color palettes, typography, spacing, and responsive breakpoints. Reference: [FRONTEND_DESIGN.md](../../FRONTEND_DESIGN.md)
+- **TECHNOLOGIES_FRONTEND.md**: Detailed specification of all major libraries, frameworks, and tools used. Reference: [TECHNOLOGIES_FRONTEND.md](../../TECHNOLOGIES_FRONTEND.md)
+- **TECHNOLOGIES_BACKEND.md**: Detailed specification of all major libraries, frameworks, and tools used. Reference: [TECHNOLOGIES_BACKEND.md](../../TECHNOLOGIES_BACKEND.md)
 - **LOGGING.md**: Logging architecture and standards for backend and frontend. Reference: [LOGGING.md](../../LOGGING.md)
 
-## 🚫 Excluded Directories
-
-### `.technologies/`
-This directory contains **sample templates and reference documents** for users to use as guides when setting up new projects.
-
-**AI assistants must NOT:**
-- Use files from `.technologies/` as context for the current project
-- Treat these documents as applicable to the active codebase
-- Reference or apply patterns from these files unless explicitly requested
-
-These are informational samples only, not active project documentation.
+## 📡 API Documentation
+- **Postman Collection**: A comprehensive Postman collection for the JobHunter API is maintained at [JobHunter.postman_collection.json](../../JobHunter.postman_collection.json).
+  - **Import**: Drag and drop the file into Postman or use the Import button.
+  - **Variables**: The collection uses `{{baseUrl}}` (defaults to `http://localhost`) and `{{token}}` for authentication.
+  - **Generation**: To update the collection after route changes, run `.scripts/generate-postman.ps1` (Windows) or `.scripts/generate-postman.sh` (Linux/Mac).
