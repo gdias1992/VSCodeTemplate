@@ -20,7 +20,6 @@ This repository follows a strict organizational structure to ensure scalability 
 - **LOGGING.md**: Logging architecture and standards for backend and frontend. Reference: [LOGGING.md](../../LOGGING.md)
 
 ## 📡 API Documentation
-- **Postman Collection**: A comprehensive Postman collection for the JobHunter API is maintained at [JobHunter.postman_collection.json](../../JobHunter.postman_collection.json).
+- **Postman Collection**: A comprehensive Postman collection for the JobHunter API is maintained at [backend.postman_collection.json](../../backend.postman_collection.json).
   - **Import**: Drag and drop the file into Postman or use the Import button.
   - **Variables**: The collection uses `{{baseUrl}}` (defaults to `http://localhost`) and `{{token}}` for authentication.
-  - **Generation**: To update the collection after route changes, run `.scripts/generate-postman.ps1` (Windows) or `.scripts/generate-postman.sh` (Linux/Mac).
