@@ -17,6 +17,10 @@ applyTo: '**/*.php'
 | **Type Safety** | Use PHP 8+ type declarations on all method signatures and properties. |
 | **Form Requests** | Validate all input using dedicated Form Request classes. |
 | **Resources** | Transform models using API Resources for consistent responses. |
+| **KISS** | Keep It Simple, Stupid. Favor simplicity over cleverness. |
+| **DRY** | Don't Repeat Yourself. Extract reusable logic. |
+| **SRP** | Single Responsibility. One component, one job. |
+| **Explicit > Implicit** | Code should be obvious, not clever. |
 
 ---
 

@@ -17,6 +17,10 @@ applyTo: '**/*.cs'
 | **Type Safety** | Leverage C#'s strong typing, nullable reference types, and records. |
 | **DTOs** | Use dedicated DTOs for requests/responses. Never expose entities directly. |
 | **Async First** | Use `async/await` for all I/O-bound operations. |
+| **KISS** | Keep It Simple, Stupid. Favor simplicity over cleverness. |
+| **DRY** | Don't Repeat Yourself. Extract reusable logic. |
+| **SRP** | Single Responsibility. One component, one job. |
+| **Explicit > Implicit** | Code should be obvious, not clever. |
 
 ---
 

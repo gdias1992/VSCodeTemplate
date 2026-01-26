@@ -17,6 +17,10 @@ applyTo: '**/*.py'
 | **Type Safety** | Use exhaustive type hints on all function signatures and variables. |
 | **Pydantic Schemas** | Validate all input/output using Pydantic models. Never return ORM models directly. |
 | **Async First** | Prefer `async def` for all I/O-bound operations. |
+| **KISS** | Keep It Simple, Stupid. Favor simplicity over cleverness. |
+| **DRY** | Don't Repeat Yourself. Extract reusable logic. |
+| **SRP** | Single Responsibility. One component, one job. |
+| **Explicit > Implicit** | Code should be obvious, not clever. |
 
 ---
 
