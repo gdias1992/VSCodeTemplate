@@ -15,7 +15,6 @@ The assistant **must** validate all newly added or edited code before considerin
 - **Methodology**: 
   - Use `curl` in the terminal to hit local endpoints (usually `http://localhost/api/...`).
   - Use `php artisan tinker` for quickly verifying Model logic or Service methods.
-  - Use scripts in `.scripts/` like `cmd_backend_log_get.ps1` to view logs and `cmd_backend_log_clear.ps1` to clear them during debugging.
 
 ## 🖥️ Frontend Testing
 - **Visual & Functional Validation**: For UI changes, verify that the integrated components render without errors.
