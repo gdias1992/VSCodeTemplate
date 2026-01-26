@@ -57,6 +57,7 @@
 | ✅ | Testing | FluentAssertions | Latest | Readable assertion syntax for tests | https://fluentassertions.com/ |
 | ✅ | Logging | Serilog | Latest | Structured logging with rich sinks support | https://serilog.net/ |
 | ✅ | Code Analysis | .NET Analyzers | 8.x | Built-in static analysis and code quality rules | https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/ |
+| ✅ | Formatting | CSharpier | Latest | Opinionated code formatter for C# | https://csharpier.com/ |
 | ✅ | Code Style | EditorConfig | N/A | Consistent coding style across editors and IDEs | https://editorconfig.org/ |
 | ✅ | Package Manager | NuGet | Latest | Dependency management for .NET packages | https://learn.microsoft.com/en-us/nuget/ |
 | ✅ | Version Control | Git | N/A | Distributed version control system | https://git-scm.com/doc |
