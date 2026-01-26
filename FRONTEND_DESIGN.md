@@ -1,6 +1,6 @@
 # 🎨 Frontend Design System
 
-> Minimalist, mobile-first design system for JobHunter, optimized for clarity, speed, and focus.
+> Minimalist, mobile-first design system for optimized for clarity, speed, and focus.
 
 ---
 
