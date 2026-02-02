@@ -7,7 +7,7 @@ applyTo: '**'
 This repository follows a strict organizational structure to ensure scalability and ease of use in a local environment.
 
 ## 📚 General Standards
-- **Maintenance Policy**: Any core project document (README, STRUCTURE, DATABASE, TECHNOLOGIES_FRONTEND, TECHNOLOGIES_BACKEND) must be updated whenever changes occur in the project's scope, architecture, or tools. Always ensure `DATABASE.md` reflects current migrations.
+- **Maintenance Policy**: Any core project document (README, STRUCTURE, DATABASE, TECHNOLOGIES, TECHNOLOGIES) must be updated whenever changes occur in the project's scope, architecture, or tools. Always ensure `DATABASE.md` reflects current migrations. Keep `backend.postman_collection.json` updated when API endpoints are added, modified, or removed.
 
 ## 📝 Core Documentation
 - **README.md**: High-level project description, tech stack overview, and setup procedures. Reference: [README.md](../../README.md)
