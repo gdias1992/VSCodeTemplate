@@ -35,9 +35,7 @@ All logs should reside in `backend/logs/` (ignored by Git).
 
 | File | Level | Description |
 | :--- | :--- | :--- |
-| `app.log` | `INFO+` | General runtime logs, startup sequence, and business logic events. |
-| `error.log` | `ERROR+` | Unhandled exceptions and critical failures (e.g., database connection loss). |
-| `access.log` | `INFO` | HTTP request/response details (Method, URL, Status, Latency). |
+| `app.log` | `ALL` | All application logs including runtime events, errors, access logs, and business logic. |
 
 ### ⚙️ Configuration Guidelines
 
@@ -66,7 +64,7 @@ Intercept HTTP requests to log:
 - Request latency
 
 ```text
-# Example format for access.log
+# Example format in app.log
 2026-01-17 10:30:45 | INFO | access | GET /api/v1/items 200 45ms
 2026-01-17 10:30:46 | INFO | access | POST /api/v1/items 201 120ms
 ```
@@ -74,12 +72,12 @@ Intercept HTTP requests to log:
 ### 🚨 Exception Handling
 
 Implement global exception handlers to capture unhandled errors:
-- Log full stack traces to `error.log`
+- Log full stack traces to `app.log` (with ERROR level)
 - Include contextual information (request URL, user context if applicable)
 - Return appropriate error responses to clients
 
 ```text
-# Example format for error.log
+# Example format in app.log
 2026-01-17 10:31:00 | ERROR | app | Unhandled exception in /api/v1/items/999
 <Stack Trace>
 ```
@@ -111,9 +109,7 @@ function getItemById(id):
 ```text
 backend/
 ├── logs/                      # Log files (Git-ignored)
-│   ├── app.log                # Application events
-│   ├── error.log              # Errors and exceptions
-│   └── access.log             # HTTP request logs
+│   └── app.log                # All application logs (events, errors, access)
 └── <src>/
     └── <core>/
         └── <logging_config>   # Logging configuration
